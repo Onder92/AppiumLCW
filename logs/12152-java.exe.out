@@ -1,0 +1,47 @@
+{"logLevel":"debug","message":"multithreading is set to false"}
+{"logLevel":"debug","message":"Using reflection to scan dependencies for gauge implementations..."}
+log4j:WARN No appenders could be found for logger (io.grpc.netty.shaded.io.netty.util.internal.logging.InternalLoggerFactory).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+{"logLevel":"debug","message":"gauge-java took 769milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 769"}
+{"logLevel":"debug","message":"starting gRPC server..."}
+{"logLevel":"debug","message":"started gRPC server on port 51981"}
+{"logLevel":"info","message":"Listening on port:51981"}
+{"logLevel":"debug","message":"Scanning packages for steps"}
+{"logLevel":"debug","message":"Comparing 'StepImplementation.waitForSeconds' and 'StepImplementation.waitForSeconds'"}
+{"logLevel":"debug","message":"Found {} saniye bekle in current project scope."}
+{"logLevel":"debug","message":"Comparing 'StepImplementation.sendKeysById' and 'StepImplementation.sendKeysById'"}
+{"logLevel":"debug","message":"Found id'li {} elementi bul ve {} değerini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'StepImplementation.clickByXpath' and 'StepImplementation.clickByXpath'"}
+{"logLevel":"debug","message":"Found xpath'li {} elemente tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'StepImplementation.clickSearchButtonOnAndroid' and 'StepImplementation.clickSearchButtonOnAndroid'"}
+{"logLevel":"debug","message":"Found Android klavyeden arama tuşuna bas in current project scope."}
+{"logLevel":"debug","message":"Comparing 'StepImplementation.clickRandomXpath' and 'StepImplementation.clickRandomXpath'"}
+{"logLevel":"debug","message":"Found xpath'li {} liste içerisinden rastgele seç ve tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'StepImplementation.textAreaControl' and 'StepImplementation.textAreaControl'"}
+{"logLevel":"debug","message":"Found id'li {} elementi bul ve text {} alanını kontrol et in current project scope."}
+{"logLevel":"debug","message":"Comparing 'StepImplementation.clickById' and 'StepImplementation.clickById'"}
+{"logLevel":"debug","message":"Found id'li {} elemente tıkla in current project scope."}
+{"logLevel":"debug","message":"Scanning packages for hooks"}
+{"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
+{"logLevel":"debug","message":"\tid'li {} elemente tıkla : public void clickById(String id)"}
+{"logLevel":"debug","message":"\txpath'li {} elemente tıkla : public void clickByXpath(String xpath)"}
+{"logLevel":"debug","message":"\tid'li {} elementi bul ve {} değerini yaz : public void sendKeysById(String id, String text)"}
+{"logLevel":"debug","message":"\t{} saniye bekle : public void waitForSeconds(ınt time) throws InterruptedException"}
+{"logLevel":"debug","message":"\tAndroid klavyeden arama tuşuna bas : public void clickSearchButtonOnAndroid()"}
+{"logLevel":"debug","message":"\tid'li {} elementi bul ve text {} alanını kontrol et : public void textAreaControl(String id, String text)"}
+{"logLevel":"debug","message":"\txpath'li {} liste içerisinden rastgele seç ve tıkla : public void clickRandomXpath(String xpath)"}
+Android  testi başlıyor
+Mar 01, 2022 5:14:44 PM io.appium.java_client.remote.AppiumCommandExecutor$1 lambda$0
+INFO: Detected dialect: W3C
+{"logLevel":"debug","message":"Executing '{} saniye bekle' using 'class StepImplementation.waitForSeconds"}
+{"logLevel":"debug","message":"Executing 'id'li {} elementi bul ve text {} alanını kontrol et' using 'class StepImplementation.textAreaControl"}
+Sayfa baglantisi doğru
+{"logLevel":"debug","message":"Executing 'id'li {} elemente tıkla' using 'class StepImplementation.clickById"}
+{"logLevel":"debug","message":"Executing '{} saniye bekle' using 'class StepImplementation.waitForSeconds"}
+{"logLevel":"debug","message":"Executing 'id'li {} elemente tıkla' using 'class StepImplementation.clickById"}
+{"logLevel":"debug","message":"Killing Java runner..."}
+{"logLevel":"debug","message":"Stopping execution pool..."}
+{"logLevel":"debug","message":"Shutting down grpc server..."}
+{"logLevel":"debug","message":"Runner killed gracefully."}

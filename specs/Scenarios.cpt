@@ -1,0 +1,44 @@
+Created by testinium on 2.03.2022
+
+This is a concept file with following syntax for each concept.
+#Uygulamanın açıldığını kontrol et
+*"3" saniye bekle
+*id'li "com.lcwaikiki.android:id/tvContent" elementi bul ve text "Yenilenen alt menü" alanını kontrol et
+
+#Ana sayfaya git
+*id'li "com.lcwaikiki.android:id/tvNext" elemente tıkla
+*"4" saniye bekle
+
+#Ürün arama sayfasına git ve <pantolon> değerini yaz
+*id'li "com.lcwaikiki.android:id/search" elemente tıkla
+*"2" saniye bekle
+*id'li "com.lcwaikiki.android:id/toolbar_search" elementi bul ve "pantolon" değerini yaz
+*Android klavyeden arama tuşuna bas
+*"3" saniye bekle
+
+#Sayfayı aşağıya kaydır ve rastgele bir ürün seç
+*Sayfayı kaydir "400" "1800" "400" "400" "3000"
+*xpath'li "//*[@resource-id='com.lcwaikiki.android:id/recyclerProduct']/android.view.ViewGroup" liste içerisinden rastgele seç ve tıkla
+*"2" saniye bekle
+
+#Ürünün ikinci resmine doğru kaydır
+*Sayfayı kaydir "572" "1430" "572" "548" "2000"
+*"2" saniye bekle
+
+#Ana sayfaya geri dön
+*id'li "com.lcwaikiki.android:id/productClose" elemente tıkla
+*id'li "com.lcwaikiki.android:id/toolbarBack" elemente tıkla
+*id'li "com.lcwaikiki.android:id/toolbar_back" elemente tıkla
+*"3" saniye bekle
+
+#Profil sayfasına gir
+*xpath'li "//*[@text='Profil']" elemente tıkla
+*"2" saniye bekle
+
+#Profil sayfasında olduğunu kontrol et
+*id'li "com.lcwaikiki.android:id/headerLogin" elementi bul ve text "GİRİŞ YAP" alanını kontrol et
+
+#Kullanıcı adı ve şifre alanını doldurup giriş yap butonuna bas
+*id'li "com.lcwaikiki.android:id/edtEmail" elementi bul ve "ondery@testinium.com" değerini yaz
+*id'li "com.lcwaikiki.android:id/edtPassword" elementi bul ve "123456" değerini yaz
+*id'li "com.lcwaikiki.android:id/buttonLogin" elemente tıkla
